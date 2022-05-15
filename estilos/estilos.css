@@ -1,0 +1,345 @@
+body{
+    background: white;
+    background-size: 100vw 100vh;
+    background-attachment:inherit;
+}
+
+h2{
+    color: deeppink;
+    margin: 10;
+    font-size: 30px;
+    margin-bottom: 1px;
+    margin-top: 10px;
+    letter-spacing: 3px;
+    
+}
+
+
+span{
+    color: white
+}
+
+form{
+    width:inherit;
+    margin: auto;
+    background: rgba(46, 49, 49, 1);
+    padding: 1px 10px;
+    box-sizing: border-box;
+    margin-top: 0px;
+    
+}
+
+#arriba{
+    background: palevioletred;
+}
+
+.nav{
+    position: right;
+    top: 60px;
+    width: 46%;
+}
+
+.menu-link{
+    display: block;
+    padding: 40px;
+    text-decoration: none;
+    color:floralwhite;
+}
+
+nav li{
+    line-height: 5px;
+    position:right;
+}
+.menu ul{
+    text-align: right;
+    
+}
+.menu{
+    display: table;
+    width: 100%;
+}
+
+nav li li{
+    max-height: 0;
+    overflow:hidden;
+    transition: all .5s ease .1s;
+}
+nav li:hover>ul>li{
+    max-height: 100px;
+    overflow: visible;
+    
+}
+
+
+.menu{
+    display:flex;
+    
+}
+
+.select{
+    color:deeppink;
+    font-weight: 800;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin-right:0px;
+}
+nav a{
+    text-decoration:none;
+    display:flex;
+    transition: 0.7s;
+    width: 40px;
+    text-align: right;
+}
+
+
+
+h1{
+    color:white;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+img{
+    border-radius: 100px;
+    border-style: solid;
+    border-color: white;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(0); }
+ 
+    15% { transform: translateX(-100%); }
+    30% { transform: translateX(-100%); }
+ 
+    35% { transform: translateX(-200%); }
+    50% { transform: translateX(-200%); }           
+ 
+    55% { transform: translateX(-300%); }
+    70% { transform: translateX(-300%); }
+ 
+   
+}
+ 
+* { box-sizing: border-box; }
+ 
+html { scroll-behavior: smooth; }
+ 
+
+ 
+.wrapper {
+    max-width: 500px;
+    margin: auto;
+}
+ 
+.slider {
+    position: relative;
+    display:flex;
+}
+ 
+.slides {
+    position: relative;
+    display:flex;
+    overflow:hidden;
+}
+ 
+.slide {
+    width: 100vw;
+    flex-shrink: 0;
+    animation-name: slide;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+ 
+.slides:hover .slide {
+    animation-play-state:running;
+}
+ 
+.slide img {
+    width: 90%;
+    vertical-align: top;
+    border-radius: 500px;
+}
+ 
+.slide a {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    
+}
+ 
+.caption {
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 8vw;
+    position: absolute;
+    bottom: 8vw;
+    right: 4vw;                                 
+}
+ 
+.slide:target {
+    animation-name: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+}
+ 
+.slider-controler {         
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(0,0,0,0);
+    z-index: 100;
+}
+ 
+.slider-controler li {
+    margin: 0 0.2rem;
+    display:inline-block;
+    vertical-align: top;
+}
+ 
+.slider-controler a {
+    display: inline-block;
+    vertical-align: top;            
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+#men{
+    position:relative;
+    left:980px;
+    top: 0px;
+}
+
+@media only screen and (min-width: 500px) {
+    .slide {
+        width: 500px;
+    }
+ 
+    .caption {
+        font-size: 100px;
+        bottom: 96px;
+        right: 45px; 
+    }
+}
+
+#abajo{
+    background: white;
+    border-left:50px ;
+    width: 1300px;
+    height: 400px;
+}
+
+#img{
+    border-radius: 0;
+    position:relative;
+    top:0 px;
+    left:200px ;
+    
+    
+}
+b{
+    color: aliceblue;
+}
+#link{
+    color: aliceblue;
+    border-style: solid;
+    font-size: 30px;
+    text-align: left;
+}
+
+#img2{
+    border-radius: 0;
+    position:absolute;
+    top: 683px;
+    left: 1050px;
+}
+
+#icono{
+    float: left;
+}
+
+video{
+    position:relative;
+    left:200px ;
+    top:20px;
+}
+p{
+    
+    border-left: 30px;
+}
+
+#inferior{
+   background:white ;
+    width: 1300px;
+    height: 400px; 
+}
+
+h3{
+    color: deeppink;
+    font-size:30px ;
+}
+
+#izquierdo{
+    position: absolute;
+    left: 800px;
+    top:1050px ;
+}
+
+b{
+    font-size:45px ;
+}
+
+table{
+    position: absolute;
+    top:940px ;
+    left: 208px;
+}
+
+.botones{
+    font-size: 25px;
+    width:350px ;
+    position: relative;
+    top:50px;
+    left:200px ;
+}
+#link1{
+    color: deeppink;
+    border-style: solid;
+    padding: 3px;
+}
+#link2{
+    color: deeppink;
+    border-style: solid;
+    padding: 3px;
+}
+#link3{
+    color: deeppink;
+    border-style: solid;
+    padding: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
